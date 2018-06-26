@@ -1,115 +1,106 @@
-# Better Using GitHub
+# Why Rust
 
-![GayHub](http://mumlovestech.com/wp-content/uploads/2013/07/git-hub.png)
+From [rust home page](https://www.rust-lang.org/en-US/):
 
----
-
-全球最大同性交友网站（大家有时也会叫**GayHub**）
-
-- 最大的开源社区
-- 最直接的项目展示
-- 最丰富的交互界面
-- 最直白的“个人简历”
-
-~~没有听说过，那你out了！~~
-
----
-
-刚刚变微软 
-
-![pic](https://pbs.twimg.com/media/DeyIbK-VQAA9kiV.jpg:large)
+**Rust** is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
 
 
 ---
 
-## First be familiar with git
-- remote
-- branch
-- commit
-- stage
-- merge/pull/rebase
+## Background
+
+- 效率，效率，效率
+- 硬件的多核
+- 软件的并发
+- 软件的安全
+
+![history](https://www.ibm.com/developerworks/library/os-developers-know-rust/Figure01.png)
 
 ---
-## Create a github account and project
 
-- demo
+## Programming Language Comparison
 
----
-## issue tracking
-- markdown support
-- issue description
-- comments/discussion/design
-- good resource to learn
+
 
 ---
-## issue ref 
-- ref other issue
-- ref commits
-- ref pull request
+
+## Features
+
+* zero-cost abstractions
+* move semantics
+* guaranteed memory safety
+* threads without data races
+* trait-based generics
+* pattern matching
+* type inference
+* minimal runtime
+* efficient C bindings
 
 ---
-## issue tags
-- classify with name and color
-- can apply multiple tags on one issue
-- different aspect should have different prefix
-- [example](https://github.com/rust-lang/rust/issues/50778)
+
+## Effective
+
+- 新手的代码可以放心提交
+- 更少的bug
+- 更快的开发效率
+- 长期整体成本的降价
 
 ---
-## issue progress
-- automatic markdown progress tracking
+
+## rust的项目
+
+- 操作系统: Redox
+- 数据库: TiKV
+- 浏览器内核：Servo
+- 区块链: parity
+- 搜索引擎: tanvity
+- 服务器: Aticx, Hyper,
+- 游戏引擎: Piston
+- 嵌入式: 
+- Web Assembly
+
+---
+
+## rust大神的rust视频介绍
+- [vedio1](https://www.youtube.com/watch?v=agzf6ftEsLU)
+- [vedio2](https://www.youtube.com/watch?v=lO1z-7cuRYI)
+
+---
+
+### learn by example
+- [通过例子学-rust(中文版)](https://rustwiki.org/zh-CN//rust-by-example/index.html)
+
+### 中文版rust Primer
+- [rust Primer](https://rustcc.gitbooks.io/rustprimer/content/)
+- Programming Rust
+
+### 24 days of rust
+- [24 days of rust](http://zsiciarz.github.io/24daysofrust/)
+
+---
+ 
+### rust社区大本营
+- [reddit](https://www.reddit.com/r/rust/)
+
+### rust学习qq群
+- QQ: 303838735
+
+---
+
+## 你的手边Rust文档：
+```sh
+$ rustup doc
 ```
-- [ ] thing 1
-- [x] thing 2
-- [ ] thing 3
-```
-- easy click to clear or mark
 
 ---
-## github pull request (workflow)
-- create a remote branch (or fork your own repo)
-- push the code to GitHub
-- start pull request
-- code review
-- merge to master
 
----
-## github CI/CD
-- TDD
-- auto trigger with every update
-- travis integration
+## Levelup
 
-
----
-## github project (kanban)
-- working progress overview
-- good place for team cooperation
-
-
----
-## github milestone
-- agile development
-- weekly sprint
-
-
----
-## github docs
-- README.md
-- Wiki
-- GitHub Pages 
-  - [rust http](https://github.com/hyperium/http)
-  - [rust http pages](https://hyperium.github.io/http)
-
----
-## github statistic
-- Pulse
-  - project overall activity
-- Contributors
-  - who was coding
-
----
-## github social
-- [top project](https://github.com/explore)
-  - [for rust only](https://github.com/trending/rust?since=daily)
-- watching a project
-- star a project
+1. 熟悉rust的语义语法，可以看懂代码
+2. 熟悉rust的标准库，可以写出简单代码
+3. 逐渐积累沉淀，开始总结各种常见的最佳实践（惯用法和模式）
+4. 和rust编译器成为亲密伙伴
+5. 广泛了解各个领域的有代表性第三方库（社区）
+6. 能够完成rust的各种规模的项目
+7. 贡献社区
 
