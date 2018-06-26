@@ -67,6 +67,15 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 
 ---
 
+## Dev Tools
+
+- rustup
+- cargo
+- debug
+- vscode (IDE)
+
+---
+
 ## Effective
 
 - 新手的代码可以放心提交
