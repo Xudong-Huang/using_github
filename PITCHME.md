@@ -18,9 +18,37 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 
 ---
 
+## Programming Language Comparison 1
+
+|         |学习成本  | 执行效率| 高并发 | 运行依赖 | 包管理  |
+|---------|---------|---------|-------|---------|---------|
+| c++     |    10   |    10   |  8    |   no    |    3    |
+| go      |    6    |    7    |  10   |   no    |    7    |
+| java    |    9    |    9    |  8    |   jvm   |    7    |
+| python  |    6    |    7    |  6    | python  |    7    |
+| js      |    7    |    7    |  6    | node    |    10   |
+| rust    |    8    |    10   |  9    |   no    |    10   |
+
+
+---
+
+## Programming Language Comparison 2
+
+|         |安全性   |内存管理  |类型系统| 表达能力 | 跨平台  |
+|---------|---------|---------|-------|---------|---------|
+| c++     |    8    | by hand |  10   | 复杂    |  一般    |
+| go      |    8    |    gc   |  10   | 一般    |  好     |
+| java    |    9    |    gc   |  8    | 复杂    |  好     |
+| python  |    7    |    gc   |  6    | 强      |  好     |
+| js      |    7    |    gc   |  6    | 强      |  好     |
+| rust    |    10   |  auto   |  9    | 强      |  好     |
+
+
 ## Programming Language Comparison
 
-
+- 面向对象
+- 函数式编程 （stream，iterator）
+- 元编译（generic，宏， 反射）
 
 ---
 
