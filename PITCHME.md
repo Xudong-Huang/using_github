@@ -18,7 +18,7 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 
 ---
 
-## Programming Language Comparison 1
+## Language Comparison 1
 
 
 |         |learning | efficiency| concurrent | standalone | package  |
@@ -33,10 +33,10 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 
 ---
 
-## Programming Language Comparison 2
+## Language Comparison 2
 
 
-|         |safety   |memory   |type   | expressive | cross-platform  |
+|         |safety   |memory   |type   | expressive | platform  |
 |---------|---------|---------|-------|---------|---------|
 | c++     |    8    | hand    |  10   | 复杂    |  一般   |
 | go      |    8    |    gc   |  10   | 一般    |  好     |
@@ -46,7 +46,7 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 | rust    |    10   |  auto   |  9    | 强      |  好     |
 
 
-## Programming Language Comparison 3
+## Language Comparison 3
 
 - 面向对象
 - 函数式编程 （stream，iterator）
