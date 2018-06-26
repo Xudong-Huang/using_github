@@ -9,7 +9,7 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 
 ## Background
 
-- 效率，效率，效率
+- 效率，效率，效率（运行成本，开发成本，维护成本）
 - 硬件的多核
 - 软件的并发
 - 软件的安全
