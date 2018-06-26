@@ -27,7 +27,6 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 | go      |    6    |    7    |  10   |   no    |    7    |
 | java    |    9    |    9    |  8    |   jvm   |    7    |
 | python  |    6    |    7    |  6    | python  |    7    |
-| js      |    7    |    7    |  6    | node    |    10   |
 | rust    |    8    |    10   |  9    |   no    |    10   |
 
 
@@ -42,9 +41,9 @@ From [rust home page](https://www.rust-lang.org/en-US/):
 | go      |    8    |    gc   |  10   | 一般    |  好     |
 | java    |    9    |    gc   |  8    | 复杂    |  好     |
 | python  |    7    |    gc   |  6    | 强      |  好     |
-| js      |    7    |    gc   |  6    | 强      |  好     |
 | rust    |    10   |  auto   |  9    | 强      |  好     |
 
+---
 
 ## Language Comparison 3
 
