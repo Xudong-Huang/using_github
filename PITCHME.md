@@ -1,144 +1,126 @@
-# Why Rust
+# 区块链介绍
 
-From [rust home page](https://www.rust-lang.org/en-US/):
+![](http://www.ruanyifeng.com/blogimg/asset/2017/bg2017122701.jpg)
 
-**Rust** is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
+---
+## 货币的发展
+* 原始的物物交换
+  - 效率低，当面交易，极为不便
+* 以实物金银为通货
+  - 携带方便，不会变质
+* 纸币的使用
+  - 以国家信用为保证
+  - 超发的问题
+* 中心化的数字金融
+   - 支付宝，微信钱包，网上银行
+   - 可以远程交换
+* 去中心化的数字加密货币
+   - BTC, ETH, EOS
+   - 没有信用背书
+   - 超发可控
+
+---
+## 比特币
+
+* 2018年最高峰2万美元一个BTC，现在3千多美元一个BTC
+
+![](image/btc_price.png)
+* 不管你支持它也好，还是反对它也好，巨大的规模已经使你无法忽视它
+
+* 比特币背后的核心技术就是区块链
+
+---
+
+## 区块链的特点
+
+* 匿名公开
+* 可以验证
+* 无法篡改
+
+---
+
+## 一些基础的密码学知识
+
+ - 哈希
+ - 非对称加密
+ - 对称加密
+---
+
+## 区块链的组织结构
+- 链式结构
+
+![](image/block_chain.png)
+---
+
+## 区块链的网络模型
+ - p2p网络模型，无中心
+
+ ![](image/p2p.png)
+
+---
+
+## 区块链的核心问题
+  - 共识算法(POW, POS, DPOS)
+  - 共识算法的本质就是在一群互不信赖的节点中确定出全局的事件顺序，每个节点看到的都相同
+  - Pow和挖矿
+    * 所有的节点抢占一个发言权，通过计算出一个数值使其和链头的联合hash满足一定的条件
+    * 最先挖到矿（获得一把全局锁）的节点有权写入数据，并获得奖励
+    * 概率性的确认，最长的链获胜，大量的节点白白浪费了算力
+    * 51%攻击，矿场的问题
 
 
 ---
 
-## Background
+## 区块链技术的发展
 
-- 效率，效率，效率（运行成本，开发成本，维护成本）
-- 硬件的多核
-- 软件的并发
-- 软件的安全
-
-![history](https://www.ibm.com/developerworks/library/os-developers-know-rust/Figure01.png)
+* 第一代BTC
+* 第二代ETH，提出了智能合约的概念
 
 ---
 
-## Language Comparison 1
+## 区块链的本质
+  - 特殊的分布式数据库
+    * 无管理员
+    * 无中心
+    * 数据可验证
+    * 一旦写入无法修改
+---
 
+## 区块链技术的应用
 
-|         |learning | efficiency| concurrent | standalone | package  |
-|---------|---------|---------|-------|---------|---------|
-| c++     |    10   |    10   |  8    |   no    |    3    |
-| go      |    6    |    7    |  10   |   no    |    7    |
-| java    |    9    |    9    |  8    |   jvm   |    7    |
-| python  |    6    |    7    |  6    | python  |    7    |
-| rust    |    8    |    10   |  9    |   no    |    10   |
+* 金融
+* 博彩
+* 溯源
+* 可信数据存储
+* 政务公开
+* 物流
+* 电商
+
+---
+
+## 目前主流区块链的不足
+
+- TPS太低
+  * 比特币每秒7比交易
+  * 以太坊每秒不到20比交易
+  * 天猫高峰时的TPS大约在10万
+- 能源的浪费
+  * 大量矿场，全球电力的0.3%
+- 交易成本
+  * 手续费偏高
 
 
 ---
 
-## Language Comparison 2
+## SMART DAG技术
 
+  - 有向无环图取代传统的链式结构
+  - 无需挖矿，采用类似于DPOS的共识技术
+  - 当前TPS处理能力1万以上（单区块单交易）
 
-|         |safety   |memory   |type   | expressive | platform  |
-|---------|---------|---------|-------|---------|---------|
-| c++     |    8    | hand    |  10   | 复杂    |  一般   |
-| go      |    8    |    gc   |  10   | 一般    |  好     |
-| java    |    9    |    gc   |  8    | 复杂    |  好     |
-| python  |    7    |    gc   |  6    | 强      |  好     |
-| rust    |    10   |  auto   |  9    | 强      |  好     |
+  ![](image/dag.png)
 
----
+## 参考
 
-## Language Comparison 3
-
-- 面向对象
-- 函数式编程 （stream，iterator）
-- 元编译（generic，宏， 反射）
-
----
-
-## Features
-
-* zero-cost abstractions
-* move semantics
-* guaranteed memory safety
-* threads without data races
-* trait-based generics
-* pattern matching
-* type inference
-* minimal runtime
-* efficient C bindings
-
----
-
-## Dev Tools
-
-- rustup
-- cargo
-- debug
-- vscode (IDE)
-
----
-
-## Effective
-
-- 新手的代码可以放心提交
-- 更少的bug
-- 更快的开发效率
-- 长期整体成本的降价
-
----
-
-## rust的项目
-
-- 操作系统: Redox
-- 数据库: TiKV
-- 浏览器内核：Servo
-- 区块链: parity
-- 搜索引擎: tanvity
-- 服务器: Aticx, Hyper,
-- 游戏引擎: Piston
-- 嵌入式: 
-- Web Assembly
-
----
-
-## rust大神的rust视频介绍
-- [vedio1](https://www.youtube.com/watch?v=agzf6ftEsLU)
-- [vedio2](https://www.youtube.com/watch?v=lO1z-7cuRYI)
-
----
-
-### learn by example
-- [通过例子学-rust(中文版)](https://rustwiki.org/zh-CN//rust-by-example/index.html)
-
-### 中文版rust Primer
-- [rust Primer](https://rustcc.gitbooks.io/rustprimer/content/)
-- Programming Rust
-
-### 24 days of rust
-- [24 days of rust](http://zsiciarz.github.io/24daysofrust/)
-
----
- 
-### rust社区大本营
-- [reddit](https://www.reddit.com/r/rust/)
-
-### rust学习qq群
-- QQ: 303838735
-
----
-
-## 你的手边Rust文档：
-```sh
-$ rustup doc
-```
-
----
-
-## Levelup
-
-1. 熟悉rust的语义语法，可以看懂代码
-2. 熟悉rust的标准库，可以写出简单代码
-3. 逐渐积累沉淀，开始总结各种常见的最佳实践（惯用法和模式）
-4. 和rust编译器成为亲密伙伴
-5. 广泛了解各个领域的有代表性第三方库（社区）
-6. 能够完成rust的各种规模的项目
-7. 贡献社区
-
+ - http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html
+ - 
