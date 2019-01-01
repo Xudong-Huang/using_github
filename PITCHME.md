@@ -136,7 +136,7 @@
 
 - 有向无环图取代传统的链式结构
 
-![](image/dag.png)
+![](image/DAG.png)
 
 ---
 
