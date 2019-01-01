@@ -48,15 +48,26 @@
 ## 一些基础的密码学知识
 
  - 哈希
+   * SHA256, MAC
+   * 哈希碰撞（反向计算，非常难）
  - 非对称加密
+   * RSA，椭圆加密
+   * 可验签
  - 对称加密
- 
+
 ---
 
 ## 区块链的组织结构
 - 链式结构
 
 ![](image/block_chain.png)
+
+---
+
+## 区块链的组织结构
+- 分叉
+
+![](image/fork.png)
 
 ---
 
@@ -83,6 +94,7 @@
 
 * 第一代BTC
 * 第二代ETH，提出了智能合约的概念
+* 第三代EOS，DAG
 
 ---
 
@@ -91,7 +103,7 @@
     * 无管理员
     * 无中心
     * 数据可验证
-    * 一旦写入无法修改
+  - 完整可信不可修改的事件历史
 ---
 
 ## 区块链技术的应用
@@ -126,12 +138,18 @@
   - 无需挖矿，采用类似于DPOS的共识技术
   - 当前TPS处理能力1万以上（单区块单交易）
 
-  ![](image/dag.png)
-
 ---
 
+## SMART DAG技术
+![](image/dag.png)
 
+
+---
+## 提问与解答
+
+---
 ## 参考
 
  - http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html
- - 
+ - http://bootcamp.arcblock.io/odyssey/abo1-all-in-one.html#cover
+
